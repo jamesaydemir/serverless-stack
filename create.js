@@ -3,6 +3,9 @@ import * as dynamoDbLib from "./libs/dynamodb-lib";
 import { success, failure } from "./libs/response-lib";
 
 export async function main(event, context) {
+  // This is obviously a junk line. I'm testing what happens
+  // if I push some bad code.
+  uuid.abc.gibberish;
   const data = JSON.parse(event.body);
   const params = {
     TableName: process.env.tableName,
